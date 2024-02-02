@@ -120,7 +120,7 @@ section{
       height: 300px;
       margin-top: 80px;
       position: relative;
-      background-image: url(../img/portadaCelular.png);
+      background-color: black;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;    
