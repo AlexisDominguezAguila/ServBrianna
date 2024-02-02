@@ -18,7 +18,7 @@
     width: 100%;
     height: 400px;
     margin-top: 80px;
-    background-image: url(/img/portada.webp);
+    background-image: url(../img/portada.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -259,7 +259,7 @@ aside{
         height: 300px;
         margin-top: 80px;
         position: relative;
-        background-image: url(/img/portadaCelular.png);
+        background-image: url(../img/portadaCelular.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;    
