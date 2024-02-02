@@ -1,0 +1,151 @@
+ 
+.portada {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-top: 80px;
+  background-image: url(/img/portada.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container-content{
+  height: 100%;
+  min-height: 500px;
+
+}
+section{
+  padding: 3px;
+  margin-bottom: 4px ;
+  min-height: 400px;
+
+}
+section{
+  text-align: center;
+}
+
+.portada h1,
+.portada h2 {
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; 
+   
+    text-align: center;
+
+}
+.portada h1 {
+
+    font-size: 5rem;
+    top:50%;
+}
+.portada h2{
+ 
+    font-size: 3rem;
+    top: 30%;
+}
+.Contactanos{
+    display: flex;
+    margin: 4px;
+}
+ 
+ section{
+   padding: 20px;
+ 
+    height: 250px;
+ }
+ #redes{
+ 
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+ }
+ #mapa{
+ 
+  width: 50%;
+  overflow: hidden;
+ }
+.titulo_contacto {
+    text-align: center;
+    margin: 10px;
+}
+.form {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    height: 350px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 9px 2px rgba(8, 8, 8, 0.515);
+  }
+  
+  .form .title {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form input {
+    outline: 0;
+    border: 1px solid rgb(138, 133, 133);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .form textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 100%;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(138, 133, 133);
+  }
+ 
+  @media (max-width: 900px) {
+    .portada{
+      width: 100%;
+      height: 300px;
+      margin-top: 80px;
+      position: relative;
+      background-image: url(/img/portadaCelular.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;    
+   
+  }
+  .portada h1 {
+    
+    font-size: 4rem;
+    top:65%;
+}
+.portada h2{
+ 
+    font-size: 2rem;
+    top: 30%;
+}
+    .Contactanos{
+      display: flex;
+      flex-wrap: wrap-reverse;
+      width: 100%;
+ 
+  }
+  #redes,#mapa {
+    width: 100%;
+  }
+  
+   
+  }
+

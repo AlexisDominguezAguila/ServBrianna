@@ -1,0 +1,323 @@
+
+.container-content{
+    height: 100%;
+    min-height: 500px;
+
+}
+.contenido{
+    display:flex;
+    padding: 5px 8px;
+    width: 100%;
+    height: 100%;
+
+ 
+}
+ 
+.portada {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-top: 80px;
+    background-image: url(/img/portada.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portada h1,
+.portada h2 {
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; 
+   
+    text-align: center;
+
+}
+.portada h1 {
+
+    font-size: 5rem;
+    top:50%;
+}
+.portada h2{
+ 
+    font-size: 3rem;
+    top: 30%;
+}
+#button-6{
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 70%;
+}
+ 
+article{
+    padding: 8px;
+margin-bottom: 4px;
+    width: 100%;
+    min-width: 70%;
+    height: 100%;
+ 
+}
+section{
+    padding: 3px;
+    margin-bottom: 4px ;
+    min-height: 400px;
+ 
+}
+section{
+    text-align: center;
+}
+.Acerca-nosotros{
+    display: flex;
+    text-align: center;
+ 
+}
+.Acerca-nosotros p{
+
+    color: #5e5b5b;
+    margin-bottom: 20px;
+
+}
+.Acerca-nosotros p {
+    padding: 0px 10px;
+    text-align: justify;
+    justify-content: center;
+}
+.Acerca-nosotros img{
+    width: 30%;
+}
+.cartas{
+    display: flex;
+    
+    justify-content: center;
+}
+.card {
+    position: relative;
+    margin-right: 20px;
+    width: 250px;
+    height: 280px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 280px;
+    fill: #d3cfcf;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+ 
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card:hover img {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  
+aside{
+    text-align: center;
+    justify-content: center;
+    padding: 4px 4px;
+    margin: 0px;
+    margin-top: 7px;
+    width: auto;
+    min-width: 30%;
+    max-height: fit-content;
+ 
+}
+.contenedor-cartas {
+    display: block;
+    flex-direction: row;
+    margin: 0 auto;  
+    text-align: center;
+    justify-content: center;
+    max-width: 280px;  
+}
+
+.card2 {
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 280px;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid transparent;
+    overflow: hidden;
+  }
+  
+  
+  
+  .content2 {
+    padding: 1.1rem;
+  }
+  
+  .image2 {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    margin-top: 8px;
+    overflow: hidden;
+ 
+  }
+  
+  .title2 {
+    color: #111827;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+  
+  .desc2 {
+    margin-top: 0.5rem;
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: justify;
+    word-spacing: 0;
+}
+
+  
+  .action2 {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #2563EB;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .action2 span {
+    transition: .3s ease;
+  }
+  
+  .action2:hover span {
+    transform: translateX(4px);
+  }
+  @media (max-width: 900px) {
+    .container-content{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .contenido{
+        display: block;
+        width: 100%;
+    }
+     
+    .portada{
+        width: 100%;
+        height: 300px;
+        margin-top: 80px;
+        position: relative;
+        background-image: url(/img/portadaCelular.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;    
+     
+    }
+    .Acerca-nosotros{
+        padding: 4px 5px;
+        display: block;
+        text-align: center;
+        justify-content: center ;
+      
+    }
+    .Acerca-nosotros p{
+     
+        text-align: justify;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .Acerca-nosotros img{
+        text-align: center  ;
+        justify-content: center;
+        width: 100%;
+    }
+    .cartas {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 300px;  
+    }
+    
+    .contenedor-cartas {
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        display: block;
+        justify-content: center;
+    }
+     
+    
+    .card2 {
+         
+        width: 300px;
+       
+      }
+      .portada h1 {
+    
+        font-size: 4rem;
+        top:55%;
+    }
+    .portada h2{
+     
+        font-size: 2rem;
+        top: 30%;
+    }
+    #button-6{
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 85%;
+    }
+  }
